@@ -15,14 +15,16 @@ href="https://discord.com/users/832383090844368946">solar</a>
 <a
 href="https://discord.com/users/878724833792364634">xoy</a>
 
-<b> Nuker Includes:
-
-
-
-
-
-
- <b>
+<b> Nuker Includes: <b>
+ 
+ <ul>
+ <li> Discord Server Nuker
+ <li> Token Nuker
+ <li> Webhook Spammer
+ <li> Dmall
+ <li> Multi Threaded Banall
+ <li> Use Of Proxies 
+ </li>
 
 
 
