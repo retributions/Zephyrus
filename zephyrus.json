@@ -1,0 +1,12 @@
+{
+  "Username": "",
+  "Token": "",
+	"Prefix": "z",
+  "Channel-Names": ["xans", "zephyrus"], 
+  "Role-Names": ["xans","zephyrus"],
+	"Reason": "Zephyrus Nuker",
+  "Webhook-Names": ["big zephy", "not solar"],
+	"Spam-Messages": ["@everyone zephyrus on this discord.gg/xans", "@everyone zephyrus nuker discord.gg/xans"],
+  "Guild-Name": "Zephyrus Ran You",
+  "Lang": "ko"
+}
