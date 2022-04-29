@@ -26,7 +26,9 @@ href="https://discord.com/users/878724833792364634">xoy</a>
  <li> Use Of Proxies 
  </li>
 
-<p align="center"><img src="https://user-images.githubusercontent.com/76661840/165996576-e5f1b2cd-e67f-4a9a-9b70-636b0404bfd9.mov"</p>
+<p align="center">
+https://user-images.githubusercontent.com/76661840/165996576-e5f1b2cd-e67f-4a9a-9b70-636b0404bfd9.mov   
+</p>
 
 
 
