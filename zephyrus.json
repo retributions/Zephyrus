@@ -1,12 +1,11 @@
 {
-  "Username": "",
   "Token": "",
 	"Prefix": "z",
   "Channel-Names": ["xans", "zephyrus"], 
   "Role-Names": ["xans","zephyrus"],
 	"Reason": "Zephyrus Nuker",
   "Webhook-Names": ["big zephy", "not solar"],
-	"Spam-Messages": ["@everyone zephyrus on this discord.gg/xans", "@everyone zephyrus nuker discord.gg/xans"],
+	"Spam-Messages": ["@everyone zephyrus on this https://github.com/retributions", "@everyone zephyrus nuker https://github.com/retributions"],
   "Guild-Name": "Zephyrus Ran You",
   "Lang": "ko"
 }
