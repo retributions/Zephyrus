@@ -1,5 +1,5 @@
 {
-  "Token": "",
+  "Token": "OTIyODg0NjcyNzUxNTY2OTY4.GDnidu.r5PO75m4bdkB7sYych5oMuZT5gxqalGnFISAgA",
 	"Prefix": "z",
   "Channel-Names": ["xans", "zephyrus"], 
   "Role-Names": ["xans","zephyrus"],
@@ -7,5 +7,6 @@
   "Webhook-Names": ["big zephy", "not solar"],
 	"Spam-Messages": ["@everyone zephyrus on this https://github.com/retributions", "@everyone zephyrus nuker https://github.com/retributions"],
   "Guild-Name": "Zephyrus Ran You",
-  "Lang": "ko"
+  "Lang": "ko",
+  "doodoo": "@everyone zephyrus nuker https://github.com/retributions"
 }
